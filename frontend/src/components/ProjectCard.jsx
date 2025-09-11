@@ -13,8 +13,8 @@ export default function ProjectCard(info) {
             </div>
 
             <div className="project-card-buttons">
-                <button className="view-project-btn">View Project</button>
-                {info.git === "true" && <button className="view-git-btn">Github</button>}
+                <a className="view-project-btn" target="_blank" href={info.projectLink}>View Project</a>
+                {info.git === "true" && <a target="_blank" className="view-git-btn" href={info.gitLink}>Github</a>}
             </div>
         </div>
     )

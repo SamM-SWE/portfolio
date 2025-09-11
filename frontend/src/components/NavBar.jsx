@@ -20,7 +20,7 @@ function NavBar() {
           <li><a className={linkCls("home")} href="#home">Home</a></li>
           <li><a className={linkCls("about")} href="#about">About</a></li>
           <li><a className={linkCls("projects")} href="#projects">Projects</a></li>
-         {/*<li><a className={linkCls("contact")} href="#contact">Contact</a></li> */}
+         {/*<li><a className={linkCls("contact")} href="#contact">Contact</a></li>*/}
         </ul>
 
         <a className="resume-btn" href={Resume} download="RESUME.pdf" target="_blank">
