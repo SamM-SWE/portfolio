@@ -5,7 +5,7 @@ import LinkedInLogo from '../assets/LinkedIn_logo.svg'
 import GitHubLogo from '../assets/git.png'
 
 import NodeLogo from '../assets/nodsjs.svg'
-import JavaLogo from '../assets/java.svg'
+import SpringLogo from '../assets/spring.svg'
 import ReactLogo from '../assets/react-js-icon.svg'
 import TailwindLogo from '../assets/tailwind.svg'
 
@@ -41,8 +41,8 @@ function Header() {
             
             <div className="svg-layout">
                 <img src={NodeLogo} id="svg-item" />
-                <img src={JavaLogo} id="svg-item" />
                 <img src={ReactLogo} id="svg-item" />
+                <img src={SpringLogo} id="svg-item" />
                 <img src={TailwindLogo} id="svg-item" />
             </div>
 

@@ -58,6 +58,11 @@ body {
 
   overflow: hidden;
   position: relative;
+
+  display: flex;
+
+  justify-content: space-evenly;
+  
 }
 
 /* --------------------Contact-------------------- */
@@ -87,6 +92,19 @@ body {
   -webkit-mask: radial-gradient(circle at center, transparent 56%, #000 56%);
   mask: radial-gradient(circle at center, transparent 56%, #000 56%);
 }
+
+.arc-layer {
+  position: absolute;
+  bottom: -80%;         /* pushes it down; adjust as needed */
+  left: 0;
+  right: 0;             /* makes it stretch full width */
+  width: 100%;          /* fills the screen */
+  height: auto;         /* keeps aspect ratio */
+  pointer-events: none; 
+  opacity: 0.7;
+  z-index: -1;
+}
+
 
 .me-img {
   position: absolute;
@@ -517,26 +535,41 @@ body {
   width: 100vw;
   height: 10vh;
   background-color: black;
-  top: 95%;
+  top: 97%;
   z-index: 999;
 
-  filter: blur(20px);
+  box-shadow: 0 -20px 40px black; /* fades upward */
 
   opacity: 0;
   animation: fadeRight 1s ease-out forwards;
   animation-delay: 8s;
 }
 
-.black-bar2 {
+.black-bar5 {
   position: absolute;
-  width: 100vw;
-  height: 70px;
+  top: 0%;
+  width: 100%;
+  height: 2%;
   background-color: black;
-  top: -9%;
   z-index: 999;
 
+  box-shadow: 
+    0  20px 40px rgba(0,0,0,0.8); /* fade downward */
+}
+
+.black-bar2 {
+  position: absolute;
+  top: 0;            /* was -9% */
+  left: 0;
+  width: 100%;       /* use % to respect the section width */
+  height: 70px;
+  background-color: black;
+  z-index: 999;
   filter: blur(20px);
 }
+
+
+
 
 .black-bar3 {
   position: absolute;
@@ -558,7 +591,7 @@ body {
 
   background: black;
 
-  filter: blur(10px);
+  box-shadow: 0 -20px 40px black; /* fades upward */
 }
 
 .svg-layout {
@@ -584,14 +617,13 @@ body {
 }
 
 .ellipse {
-  position: absolute;
-  width: 381.6px;      /* horizontal diameter */
-  height: 371.7px;     /* vertical diameter */
+  width: 381.6px;    
+  height: 371.7px;    
   background: #693B7E;
-  border-radius: 50% / 50%; /* makes it an ellipse */
+  border-radius: 50% / 50%;
   z-index: 1;
 
-  box-shadow: 0 8px 64px 0 rgb(131, 122, 136); /* drop shadow */
+  box-shadow: 0 8px 64px 0 rgb(131, 122, 136);
 
 
   display: flex;
@@ -607,14 +639,10 @@ body {
 }
 
 .aboutimg-container {
-  position: absolute;
-  top: 200px;
-  left: 12%;
-
+  z-index: 1;
 }
 
 .about-me-title {
-  position: absolute;
   color: #ffffff;
 
   font-family: Outfit;
@@ -622,10 +650,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
-  left: 50%;
-  top: 200px;
-  
 }
 
 .purple-tag {
@@ -672,23 +696,13 @@ body {
 }
 
 .tag-div {
-  position: absolute;
-  
-
   display: flex;
-  justify-content: space-between;
-
-  gap: 10px;
-
-  top: 260px;
-  left: 50%;
-
+  gap: 20px;
   width: auto;
   height: auto;
 }
 
 .bio-text {
-  position: absolute;
   color: #FFF;
   font-family: Outfit;
   font-size:  29px;
@@ -698,17 +712,22 @@ body {
 
   width: 589px;
 
-  top: 320px;
-  left: 50%;
+
 }
 
 .skill-card-div {
   display: flex;
-  position: absolute;
 
-  top: 530px;
-  left: 50%;
   gap: 30px;
+}
+
+.right-about-div {
+  z-index: 2;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .skill-card {
@@ -916,8 +935,9 @@ body {
 }
 
 .arc-svg {
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: -2;
 }
 
 .arc-svg2 {
@@ -927,6 +947,7 @@ body {
 
 .arc-svg3 {
   position: relative;
+  top: 0;
   width: 100%;
 }
 
@@ -946,4 +967,15 @@ body {
   font-size: 20px;
 
 
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+ 
 }
