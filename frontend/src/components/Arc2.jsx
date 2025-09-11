@@ -1,6 +1,6 @@
 export default function Arc2() {
   return (
-    <svg width="1764" height="1764" viewBox="0 0 1764 1764">
+    <svg width="1764" height="1764" viewBox="0 0 1764 1764" className="arc-svg2">
   <defs>
     <filter id="layerBlur" filterUnits="userSpaceOnUse"
             x="-1000" y="-1000" width="3764" height="3764">
@@ -25,3 +25,4 @@ export default function Arc2() {
 
   );
 }
+

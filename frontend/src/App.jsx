@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import AboutPage from './screens/About'
 import ProjectsPage from './screens/Projects';
 import ContactPage from './screens/Contact';
+import Footer from './screens/footer';
 
 import './App.css'
 
@@ -29,9 +30,10 @@ function App() {
     <>
       <NavBar/>
       <Header/>
-      <AboutPage/>
-      <ProjectsPage/>
-      <ContactPage/>
+       <AboutPage/>
+       <ProjectsPage/>
+       <Footer/>
+      {/*<ContactPage/> */}
     </>
   )
 }
