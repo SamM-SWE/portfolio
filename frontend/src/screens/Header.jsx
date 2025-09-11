@@ -29,7 +29,7 @@ function Header() {
             </div>
 
 
-            <button className="social-button1">
+            <button className="social-button1" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
                 Connect with me on
                 <img src={LinkedInLogo} className="linkedin-logo"/>
             </button>
