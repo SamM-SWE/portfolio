@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar"
-import Eclipse from '../assets/Ellipse.png'
 import me from "../assets/me.png"
 import LinkedInLogo from '../assets/LinkedIn_logo.svg'
 import GitHubLogo from '../assets/git.png'

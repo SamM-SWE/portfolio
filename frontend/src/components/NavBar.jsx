@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useActiveSection } from "./useActiveSection";
-import downloadImg from '../assets/download-img.png';
 import Resume from '../assets/RESUME.pdf';
 
 function NavBar() {
