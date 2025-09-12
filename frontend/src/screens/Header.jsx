@@ -54,10 +54,9 @@ function Header() {
             </div>
             
             <div className="svg-layout">
-                <img src={NodeLogo} id="svg-item" />
                 <img src={ReactLogo} id="svg-item" />
+                <img src={NodeLogo} id="svg-item" />
                 <img src={SpringLogo} id="svg-item" />
-                <img src={TailwindLogo} id="svg-item" />
             </div>
 
             <div className="black-bar"/>
