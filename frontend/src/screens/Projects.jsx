@@ -1,6 +1,5 @@
 import Arc3 from "../components/Arc3"
 import ProjectCard from "../components/ProjectCard"
-import PlaceHolderImg from "../assets/placeholderimg.png"
 import PortfolioIMG from "../assets/Portfolio.png"
 import UlicafIMG from "../assets/Ulicaf.png"
 
