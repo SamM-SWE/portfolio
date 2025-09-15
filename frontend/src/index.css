@@ -1113,6 +1113,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+
+    gap: 40px
   }
 
   
@@ -1160,7 +1162,7 @@ body {
     border-width: 2px;
     
     opacity: 0;
-    
+
     animation: fadeRight 1s ease-out forwards;
     animation-delay: 8s;
   }
