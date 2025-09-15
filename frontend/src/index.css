@@ -1079,6 +1079,10 @@ body {
     display: none;
   }
 
+  .main-content-mobile {
+    display: none;
+  }
+
 @media (max-width: 600px) {
 
   .arc-svg {
@@ -1178,6 +1182,54 @@ body {
 
   #svg-item {
     transform: scale(0.7);
+  }
+
+  .main-content {
+    display: none;
+  }
+
+  .main-content-mobile {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .about-mobile-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ellipse {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bio-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .skill-card-div {
+    position: relative;
+    width: 100%;
+  }
+
+  .skill-card {
+    width: 28%;
+    height: 100%;
   }
 
 }
