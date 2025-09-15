@@ -1226,14 +1226,21 @@ body {
   }
 
   .skill-card-div {
+    display: flex;
     position: relative;
     width: 100%;
+    flex-wrap: wrap;
 
   }
+  
 
   .skill-card {
     width: 28%;
-    height: 11vh;
+    height: 9vh;
+  }
+
+  .titleinfo-txt {
+    font-size: 2.2vh;
   }
 
 }
