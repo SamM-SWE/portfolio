@@ -44,11 +44,11 @@ function Header() {
 
 
                 <div className="mobile-social-buttons">
-                    <button className="social-button1-mobile" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
+                    <button className="social-button-mobile" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
                         <img src={LinkedInLogo} className="linkedin-logo"/>
                     </button>
 
-                    <button className="social-button2-mobile" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
+                    <button className="social-button-mobile" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
                         <img src={GitHubLogo} className="git-logo"/>
                     </button>
                 </div>
