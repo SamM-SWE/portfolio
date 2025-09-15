@@ -16,48 +16,50 @@ function Header() {
             
             <img src={me} className="me-img" />
 
-            <div className="first-side-text">
-                <span className="span-class">
-                    <span className="p1">Hi, I'm </span>
-                    <span className="p2">Sam.</span>
-                </span>
 
-                <span className="span-class2">
-                    <span className="p3">Passionate, </span>
-                    <span className="p4"><br/>Software Engineer</span>
-                </span>
-            </div>
+            <div className="main-header-div">
+                <div className="first-side-text">
+                    <span className="span-class">
+                        <span className="p1">Hi, I'm </span>
+                        <span className="p2">Sam.</span>
+                    </span>
 
+                    <span className="span-class2">
+                        <span className="p3">Passionate, </span>
+                        <span className="p4"><br/>Software Engineer</span>
+                    </span>
+                </div>
+
+                <div className="social-div">
+                    <button className="social-button1" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
+                        <img src={LinkedInLogo} className="linkedin-logo"/>
+                    </button>
+
+                    <button className="social-button2" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
+                        <img src={GitHubLogo} className="git-logo"/>
+                    </button>
+                </div>
             
-            <button className="social-button1" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
-                Connect with me on
-                <img src={LinkedInLogo} className="linkedin-logo"/>
-            </button>
-
-            <button className="social-button2" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
-                Check out my
-                <img src={GitHubLogo} className="git-logo"/>
-            </button>
 
 
 
-            <div className="mobile-social-buttons">
-                <button className="social-button1-mobile" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
-                    Connect with me
-                    <img src={LinkedInLogo} className="linkedin-logo"/>
-                </button>
+                <div className="mobile-social-buttons">
+                    <button className="social-button1-mobile" onClick={() => window.open("https://www.linkedin.com/in/samuel-monneh-093497351/", "_blank")}>
+                        <img src={LinkedInLogo} className="linkedin-logo"/>
+                    </button>
 
-                <button className="social-button2-mobile" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
-                    Check out my
-                    <img src={GitHubLogo} className="git-logo"/>
-                </button>
+                    <button className="social-button2-mobile" onClick={() => window.open("https://github.com/SamM-SWE", "_blank")}>
+                        <img src={GitHubLogo} className="git-logo"/>
+                    </button>
+                </div>
+            
+                <div className="svg-layout">
+                    <img src={ReactLogo} id="svg-item" />
+                    <img src={NodeLogo} id="svg-item" />
+                    <img src={SpringLogo} id="svg-item" />
+                </div>
             </div>
             
-            <div className="svg-layout">
-                <img src={ReactLogo} id="svg-item" />
-                <img src={NodeLogo} id="svg-item" />
-                <img src={SpringLogo} id="svg-item" />
-            </div>
 
             <div className="black-bar"/>
 

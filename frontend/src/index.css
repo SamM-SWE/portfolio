@@ -41,7 +41,7 @@ body {
   width: 100%;
   height: 100vh;
 
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
   z-index: 1;
 
   overflow: hidden;
@@ -297,10 +297,26 @@ body {
 
 
 
-
-
-.circle {
+.first-side-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   
+}
+
+.main-header-div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  width: 40%;
+
+  gap: 60px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  height: auto;
 }
 
 .p1 {
@@ -327,6 +343,8 @@ body {
 
   animation: fade-in 1s ease-out forwards;
   animation-delay: 5s;
+
+ 
   
 }
 
@@ -361,21 +379,16 @@ body {
 
 
 .span-class {
-  position: absolute;
+  position: relative;
   font-family: Outfit;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
-  top: 21%;
-  left: 43px;
 
-  width: 0;
-  height: auto;
-
-  overflow: hidden;               /* hides text until it's "typed" */
-  border-right: 2px solid #ffffff; /* blinking caret */
+  overflow: hidden;               
+  border-right: 2px solid #ffffff; 
   white-space: nowrap;
   width: 0;
   animation: typing 3s steps(30, end) forwards,
@@ -388,18 +401,25 @@ body {
 .typewriter.done { border-right-color: transparent; animation: none; }
 
 .span-class2 {
-  position: absolute;
-  
-
-  top: 28%;
-  left: 40px;
+  position: relative;
 }
 
+.social-div {
+  display: flex;
+  
+  position: relative;
+  justify-content: center;
+  gap: 0px;
+  width: 400px;
+  gap: 20px;
+
+  
+}
 
 .social-button1 {
   display: flex;
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 200px;
   height: 50px;
   gap: 10px;
   align-items: center;
@@ -418,8 +438,7 @@ body {
   font-weight: 500;
   line-height: normal;
 
-  top: 56%;
-  left: 40px;
+
 
   overflow: hidden;
 
@@ -459,8 +478,8 @@ body {
 
 .social-button2 {
   display: flex;
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 200px;
   height: 50px;
   align-items: center;
   justify-content: center;
@@ -478,8 +497,7 @@ body {
   font-weight: 500;
   line-height: normal;
 
-  top: 56%;
-  left: 360px;
+
 
   overflow: hidden;
 
@@ -520,14 +538,14 @@ body {
 
 .linkedin-logo {
   display: flex;
-  width: 30%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
 }
 
 .git-logo {
   display: flex;
-  width: 35%;
-  height: 70%;
+  width: 75%;
+  height: 90%;
 }
 
 .black-bar {
@@ -597,11 +615,9 @@ body {
 .svg-layout {
   background-color: transparent;
   display: flex;
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 123px;
-  top: 70%;
-  left: 40px;
   gap: 40px;
   justify-content: left;
 
@@ -937,7 +953,9 @@ body {
 .arc-svg {
   position: fixed;
   width: 100%;
-  z-index: -2;
+  bottom: 90%;
+  transform: translateY(90%);
+  z-index: -1;
 }
 
 .arc-svg2 {
@@ -1013,6 +1031,8 @@ body {
     z-index: 100000;
     padding: 0;
     margin: 0;
+
+    
     
   }
 
