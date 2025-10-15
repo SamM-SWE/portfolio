@@ -28,7 +28,6 @@ function About() {
                     <div className="skill-card-div">
                         <SkillCard years="3+" title="Years Coding"/>
                         <SkillCard years="2+" title="Projects"/>
-                        <SkillCard years="1" title="Intership"/>
                     </div>
                 </div>
             </div>
