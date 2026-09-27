@@ -2,7 +2,7 @@ import Arc3 from "../components/Arc3"
 import ProjectCard from "../components/ProjectCard"
 import PortfolioIMG from "../assets/Portfolio.png"
 import UlicafIMG from "../assets/Ulicaf.png"
-import KlippsIMG from "../assets/KlippsIMG.png"
+import KlippsIMG from "../assets/Klipps.png"
 
 export default function Projects() {
     return (
