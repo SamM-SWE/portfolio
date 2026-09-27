@@ -26,8 +26,8 @@ function About() {
                     <div className="bio-text">I am a Computer Science student with a passion for developing full-stack  applications and solving real world problems. Currently, im focused on expanding my skills and gaining hands-on experience</div>
                     
                     <div className="skill-card-div">
-                        <SkillCard years="3+" title="Years Coding"/>
-                        <SkillCard years="2+" title="Projects"/>
+                        <SkillCard years="4+" title="Years Coding"/>
+                        <SkillCard years="3+" title="Projects"/>
                     </div>
                 </div>
             </div>
