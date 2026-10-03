@@ -26,7 +26,7 @@ function Header() {
 
                     <span className="span-class2">
                         <span className="p3">Passionate, </span>
-                        <span className="p4"><br/>Software Engineer</span>
+                        <span className="p4"><br/>Computer Scientist</span>
                     </span>
                 </div>
 

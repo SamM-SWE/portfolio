@@ -12,7 +12,7 @@ export default function Projects() {
             <div className="projects-div">
                 <ProjectCard title="Portfolio" img={PortfolioIMG} git="true" projectLink="https://sammonneh.vercel.app" gitLink="https://github.com/SamM-SWE/portfolio" desc="Personal portfolio, regarding information about myself and also showcasing my projects."></ProjectCard>
                 <ProjectCard title="ULICAF" img={UlicafIMG} projectLink="https://www.ulicaf.org" desc="Non profit orginazation website showcasing, updates, newsletters, and donations. Also showcases an Admin panel."></ProjectCard>
-                <ProjectCard title="Klipp: To-Do App" img={KlippsIMG} git="true" desc="A minimal modern task management app for organizing, tracking, and completing daily tasks." gitLink="https://github.com/SamM-SWE/ToDoApplication"></ProjectCard>
+                <ProjectCard title="Klipp: To-Do App" img={KlippsIMG} git="true" desc="A minimal modern task management app for organizing, tracking, and completing daily tasks." gitLink="https://github.com/SamM-SWE/ToDoApplication" projectLink="https://klippstodo.vercel.app"></ProjectCard>
             </div>
             
             <div className="black-bar4"></div>
